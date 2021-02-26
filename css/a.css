@@ -42,6 +42,13 @@ input {
     padding: 17px 40px;
 }
 
+.loading {
+    color: #de3d3d;
+    margin-bottom: 279px;
+    width: max-content;
+    font-size: 35px;
+}
+
 .btn {
     font-size: 17px;
     cursor: pointer;
@@ -74,7 +81,7 @@ input {
 	flex-direction:column;
 	align-items:center;
 	justify-content:center;
-  animation: preloader-rotate 2s infinite linear;
+  animation:  text-bounce 3s infinite ease-in-out;
 }
 
 .preloader__item {
@@ -85,7 +92,7 @@ input {
   top: 0;
   background-color: none;
   border-radius: 100%;
-  animation: preloader-bounce 2s infinite ease-in-out;
+  animation: preloader-bounce 3s infinite ease-in-out;
 }
 
 
@@ -97,6 +104,18 @@ input {
 */
 
 @keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+@keyframes text-bounce {
 
   0%,
   100% {
