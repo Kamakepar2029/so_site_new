@@ -1,0 +1,35 @@
+.scrolldown {
+    height: 15px;
+    width: 15px;
+    margin-left: 3px;
+    display: block;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    transform: rotate(-45deg);
+    margin-top: 6px;
+}
+
+.scrolldown::after {
+    content: "";
+    height: 15px;
+    width: 15px;
+    margin-left: -32px;
+    display: inline-block;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    transform: rotate(0deg);
+		animation: visible_new 3s infinite ease-in-out;
+    margin-top: 14px;
+}
+
+@keyframes visible_new {
+
+  0%,
+  100% {
+    transform: translate3d(-4px, 4px, 4px);
+  }
+
+  50% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
