@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
+@keyframes glitch {
+  0%,40%,44%,58%,61%,65%,69%,73%,100% {transform:skewX(0deg);}
+  41% {transform: skewX(1deg);}
+  42% {transform: skewX(-2deg);}
+  59% {transform: skewX(1deg) skewY(3deg);}
+  60% {transform: skewX(-1deg) skewY(-3deg);}
+  63% {transform: skewX(1deg) skewY(-1deg);}
+  70% {transform: skewX(-1deg) skewY(-3deg);}
+  71% {transform: skewX(1deg) skewY(-3deg);}
+}
 
 .logo__img{
 	width:70px;
@@ -63,12 +74,28 @@ body{
 
 .header__description__margin {
     font-size: 144%;
+		font-family: 'Roboto Slab', serif;
+  text-align: center;
+  font-weight: normal;
+  color: transparent;
+  text-shadow: 0 0 1px #eee, 1px 0px 1px #00dcdc, -1px -2px 1px #ff3232;
+  animation: glitch 4s ease-in-out infinite alternate;
     padding: 28px;
 }
 
 .header__title_margin {
     font-size: 471%;
-    text-shadow: #cad5e2 1px 1px 0, #cad5e2 2px 2px 0, #cad5e2 3px 3px 0, #cad5e2 4px 4px 0, #cad5e2 5px 5px 0;
+    /*text-shadow: #cad5e2 1px 1px 0, #cad5e2 2px 2px 0, #cad5e2 3px 3px 0, #cad5e2 4px 4px 0, #cad5e2 5px 5px 0;
+		text-shadow: -1px -1px white, 1px 1px gray, 2px 2px #7a7a7a, 3px 3px #757575, 4px 4px #707070, 5px 5px #6b6b6b, 6px 6px #666666, 7px 7px #616161, 8px 8px #5c5c5c, 9px 9px #575757, 10px 10px #525252, 11px 11px #4d4d4d, 18px 18px 30px rgba(0, 0, 0, .4), 18px 18px 10px rgba(0, 0, 0, .4);*/
+		font-family: 'Roboto Slab', serif;
+  text-align: center;
+  font-weight: normal;
+  color: transparent;
+/*
+  text-shadow: 0 0 1px #eee, 5px 5px 1px #00dcdc, -5px -2px 1px #ff3232;
+	*/
+	text-shadow: 0 0 1px #eee, 1px 0px 1px #00dcdc, -1px -2px 1px #ff3232;
+  animation: glitch 4s ease-in-out infinite alternate;
 		margin-top:20px;
 }
 
@@ -82,12 +109,13 @@ body{
     border-radius: 30%;
     height: 60px;
     width: 20px;
+		box-shadow: 0 0 1px #eee, 1px 0px 1px #00dcdc, -1px -2px 1px #ff3232;
 		text-align:center;
 }
 
 .down__arrow a i {
   color: white;
-  text-decoration: ;
+  text-decoration: none;
   font-size: 45px;
 }
 

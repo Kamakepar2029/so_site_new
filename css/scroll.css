@@ -18,7 +18,7 @@
     border-bottom: 2px solid white;
     border-left: 2px solid white;
     transform: rotate(0deg);
-		animation: visible_new 3s infinite ease-in-out;
+		animation: visible_new 1.4s infinite ease-in-out;
     margin-top: 14px;
 }
 
