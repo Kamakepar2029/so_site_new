@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;700&display=swap');
+
+.logo__img{
+	width:70px;
+	height: 70px;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 2px 10px 0px wheat;
+}
+
+body{
+	background:black;
+	margin:0px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1.1;
+}
+
+.logo {
+    flex-grow: 3;
+}
+
+.menu__item {
+		display:block;
+    color: #de3d3d;
+    text-decoration: none;
+    font-size: 18px;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 700;
+    text-transform: uppercase;
+}
+
+.menu__item::after{
+	content:"";
+	background:#de3d3d;
+	width:auto;
+	padding:3px;
+	display:block;
+}
+
+.header__out {
+    height: 90vh;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: url(/animated.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__description__margin {
+    font-size: 144%;
+    padding: 28px;
+}
+
+.header__title_margin {
+    font-size: 471%;
+    text-shadow: #cad5e2 1px 1px 0, #cad5e2 2px 2px 0, #cad5e2 3px 3px 0, #cad5e2 4px 4px 0, #cad5e2 5px 5px 0;
+		margin-top:20px;
+}
+
+.down__arrow {
+    /*transform: rotate(90deg);*/
+    font-size: 32px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    border: 2px solid;
+    padding: 6px;
+    border-radius: 80%;
+}
+
+.down__arrow a i {
+  color: white;
+  text-decoration: ;
+  font-size: 45px;
+}
+
+.down_arrow a {
+  text-decoration: none;
+}
