@@ -122,3 +122,38 @@ body{
 .down_arrow a {
   text-decoration: none;
 }
+
+.other__body {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.articles__inner {
+    margin-top: 40px;
+    margin-left: 13px;
+    border-radius: 7px;
+    display: flex;
+    border: 2px solid white;
+    width: 28%;
+    color: white;
+    height: min-content;
+}
+
+a{
+	text-decoration:none;
+	color:white;
+}
+
+.link {
+    flex-grow: 2;
+    width: 125px;
+}
+
+.articles__title {
+    font-size: 20px;
+}
+
+.articles__description {
+    font-size: 13px;
+}
